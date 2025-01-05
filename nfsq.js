@@ -11,7 +11,7 @@ let headers = $request.headers;
 let uniqueIdentity = headers['unique_identity'];
 let apiToken = headers['apitoken'];
 
-let combinedValue = `${uniqueIdentity}#${apiToken}#`;
+let combinedValue = `${uniqueIdentity}#${apiToken}#1`;
 
 console.log(combinedValue);
 $notify("农夫CK，#后自行备注", "", combinedValue);
